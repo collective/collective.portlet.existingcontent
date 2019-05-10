@@ -39,3 +39,4 @@ reports/
 !.gitignore
 !.gitkeep
 !.travis.yml
+.Python
