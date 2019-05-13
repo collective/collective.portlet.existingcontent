@@ -56,29 +56,29 @@ class IExistingContentPortlet(IPortletDataProvider):
     )
 
     # let's think about another time
-    show_image = schema.Bool(
-        title=_(u'Show content image (if available)'),
-        default=False,
-        required=False,
-    )
+    # show_image = schema.Bool(
+    #     title=_(u'Show content image (if available)'),
+    #     default=False,
+    #     required=False,
+    # )
 
-    show_image_caption = schema.Bool(
-        title=_(u'Show image caption (if leadimage available)'),
-        default=False,
-        required=False,
-    )
+    # show_image_caption = schema.Bool(
+    #     title=_(u'Show image caption (if leadimage available)'),
+    #     default=False,
+    #     required=False,
+    # )
 
-    allow_image_popup = schema.Bool(
-        title=_(u'Allow image popup (if leadimage available)'),
-        default=False,
-        required=False,
-    )
+    # allow_image_popup = schema.Bool(
+    #     title=_(u'Allow image popup (if leadimage available)'),
+    #     default=False,
+    #     required=False,
+    # )
 
-    image_scale = schema.Choice(
-        title=_(u'Image scale'),
-        vocabulary='plone.app.vocabularies.ImagesScales',
-        required=False,
-    )
+    # image_scale = schema.Choice(
+    #     title=_(u'Image scale'),
+    #     vocabulary='plone.app.vocabularies.ImagesScales',
+    #     required=False,
+    # )
 
     portlet_class = schema.TextLine(
         title=_(u'Portlet additional styles'),
