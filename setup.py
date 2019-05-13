@@ -25,7 +25,6 @@ setup(
         "Framework :: Plone :: 5.2",
         "Programming Language :: Python",
         "Programming Language :: Python :: 2.7",
-        "Programming Language :: Python :: 3.6",
         "Programming Language :: Python :: 3.7",
         "Operating System :: OS Independent",
         "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
@@ -33,7 +32,7 @@ setup(
     keywords='Python Plone',
     author='Markus Hilbert',
     author_email='markus.hilbert@iham.at',
-    url='https://pypi.python.org/pypi/collective.portlet.existingcontent',
+    url='https://github.com/collective/collective.portlet.existingcontent',
     license='GPL version 2',
     packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['collective', 'collective.portlet'],
@@ -42,21 +41,11 @@ setup(
     python_requires="==2.7, >=3.6",
     install_requires=[
         'setuptools',
-        # -*- Extra requirements: -*-
-        'z3c.jbot',
-        'plone.api>=1.8.4',
-        'plone.restapi',
-        'plone.app.dexterity',
+        'Products.CMFPlone',
     ],
     extras_require={
         'test': [
             'plone.app.testing',
-            # Plone KGS does not use this version, because it would break
-            # Remove if your package shall be part of coredev.
-            # plone_coredev tests as of 2016-04-01.
-            'plone.testing>=5.0.0',
-            'plone.app.contenttypes',
-            'plone.app.robotframework[debug]',
         ],
     },
     entry_points="""

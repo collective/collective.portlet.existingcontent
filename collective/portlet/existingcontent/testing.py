@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 from plone import api
 from plone.app.contenttypes.testing import PLONE_APP_CONTENTTYPES_FIXTURE
-from plone.app.robotframework.testing import REMOTE_LIBRARY_BUNDLE_FIXTURE
 from plone.app.testing import applyProfile
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
@@ -54,14 +53,4 @@ COLLECTIVE_PORTLET_EXISTINGCONTENT_INTEGRATION_TESTING = IntegrationTesting(
 COLLECTIVE_PORTLET_EXISTINGCONTENT_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(COLLECTIVE_PORTLET_EXISTINGCONTENT_FIXTURE,),
     name='CollectivePortletExistingContentLayer:FunctionalTesting',
-)
-
-
-COLLECTIVE_PORTLET_EXISTINGCONTENT_ACCEPTANCE_TESTING = FunctionalTesting(
-    bases=(
-        COLLECTIVE_PORTLET_EXISTINGCONTENT_FIXTURE,
-        REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE,
-    ),
-    name='CollectivePortletExistingContentLayer:AcceptanceTesting',
 )
