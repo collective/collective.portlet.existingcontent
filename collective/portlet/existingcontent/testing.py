@@ -9,7 +9,6 @@ from plone.app.testing import PloneSandboxLayer
 from plone.app.testing import setRoles
 from plone.app.testing import TEST_USER_ID
 from plone.app.testing import TEST_USER_NAME
-from plone.testing import z2
 
 import collective.portlet.existingcontent
 
