@@ -35,7 +35,7 @@
   <plone:portlet
       name="portlets.ExistingContent"
       interface=".portlet.IExistingContentPortlet"
-      assignment="plone.app.portlets.portlets.base.Assignment"
+      assignment=".portlet.Assignment"
       renderer=".portlet.Renderer"
       addview=".portlet.AddForm"
       editview=".portlet.EditForm"
