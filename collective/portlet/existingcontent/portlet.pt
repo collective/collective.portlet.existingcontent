@@ -1,4 +1,4 @@
-<section class="portlet portletExistingContent ${view/data/portlet_class}"
+<section class="portlet portletExistingContent ${view/data/portlet_class} ${python:view.existing_content_item.portal_type.lower()}-${view/existing_content_item/id}"
     i18n:domain="plone"
     tal:define="
       title view/title;
