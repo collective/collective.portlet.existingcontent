@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.2 (unreleased)
+1.0.2 (2019-07-25)
 ------------------
 
 - Fixed displayed Title in Portlet Management.
