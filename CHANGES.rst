@@ -8,6 +8,9 @@ Changelog
 - Fixed displayed Title in Portlet Management.
   [iham]
 
+- Added additional classes to rendered porlet.
+  [agitator]
+
 - Fixed Portlet Assignment.
   [iham]
 
