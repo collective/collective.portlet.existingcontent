@@ -5,6 +5,9 @@ Changelog
 1.0.2 (unreleased)
 ------------------
 
+- Fixed displayed Title in Portlet Management.
+  [iham]
+
 - Fixed Portlet Assignment.
   [iham]
 

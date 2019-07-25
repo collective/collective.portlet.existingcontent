@@ -112,23 +112,17 @@ class Assignment(base.Assignment):
         # self.image_scale = image_scale
         self.portlet_class = portlet_class
 
-        self.existing_content_title = ''
-        self.existing_content_type = ''
-
-        if self.content_uid:
-            brains = api.content.find(UID=self.content_uid)
-            if brains:
-                self.existing_content_title = brains[0].Title
-                self.existing_content_type = brains[0].Type
-
     @property
     def title(self):
         if self.content_uid:
+            brains = api.content.find(UID=self.content_uid)
+            content_title = unicode(brains[0].Title, 'utf-8')
+            content_type = brains[0].Type
             return _(
                 u'Existing ${content_type} "${content_title}"',
                 mapping={
-                    'content_type': self.existing_content_type,
-                    'content_title': self.existing_content_title,
+                    'content_type': content_type,
+                    'content_title': content_title,
                 },
             )
         return _(u'Existing Content')
