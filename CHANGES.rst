@@ -5,7 +5,7 @@ Changelog
 1.0.3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Use safe_text to convert to unicode for Python3. [fredvd]
 
 
 1.0.2 (2019-07-25)
