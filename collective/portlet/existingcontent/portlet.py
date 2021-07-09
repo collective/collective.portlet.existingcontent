@@ -13,6 +13,7 @@ from plone.app.z3cform.widget import RelatedItemsFieldWidget
 from plone.autoform import directives as form
 from plone.memoize.instance import memoize
 from plone.portlets.interfaces import IPortletDataProvider
+from Products.CMFPlone.utils import safe_text
 from Products.Five.browser.pagetemplatefile import ViewPageTemplateFile
 from z3c.form import field
 from zope.interface import implementer
@@ -116,7 +117,7 @@ class Assignment(base.Assignment):
     def title(self):
         if self.content_uid:
             brains = api.content.find(UID=self.content_uid)
-            content_title = unicode(brains[0].Title, 'utf-8')
+            content_title = safe_text(brains[0].Title, 'utf-8')
             content_type = brains[0].Type
             return _(
                 u'Existing ${content_type} "${content_title}"',
