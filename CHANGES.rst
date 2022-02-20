@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.3 (unreleased)
+1.0.3 (2022-02-20)
 ------------------
 
 - Use safe_text to convert to unicode for Python3. [fredvd]
