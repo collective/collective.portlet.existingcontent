@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.4 (unreleased)
+1.0.4 (2022-03-19)
 ------------------
 
 - Remove problematic python_requires in setup.py. [fredvd]
