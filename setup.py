@@ -38,7 +38,6 @@ setup(
     namespace_packages=['collective', 'collective.portlet'],
     include_package_data=True,
     zip_safe=False,
-    python_requires="==2.7, >=3.6",
     install_requires=[
         'setuptools',
         'Products.CMFPlone',

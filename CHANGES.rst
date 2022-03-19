@@ -5,7 +5,7 @@ Changelog
 1.0.4 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Remove problematic python_requires in setup.py. [fredvd]
 
 
 1.0.3 (2022-02-20)
